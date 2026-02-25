@@ -3,7 +3,7 @@ let button1 = {
   height: '70%',
   aspectRatio: '1/1',
   background: '#f30',
-  margin: 'clamp(10px, 2vmin, 20px)',
+  margin: 'clamp(5px, 2vmin, 10px)',
 };
 
 let button2 = {
