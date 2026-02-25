@@ -55,7 +55,7 @@ function AVimg() {
         height: 'max-content',
       },
     },
-    e(Anime2, {img: g.isAnimeData.images.jpg.large_image_url || null}),
+    e(Anime2, {img: g.isAnimeData.images.webp.large_image_url || null}),
     e(Button4, {width: '70%', aniFavourite: alreadyFavorite, 
       onClick: () => {
         g.setIsAnimeFavourite(prev => {
@@ -209,7 +209,7 @@ function Characters() {
         key: index,
         characters: c,
         
-        img: c?.character?.images?.jpg?.image_url,
+        img: c?.character?.images?.webp?.image_url,
         
         name: c?.character?.name ? `Ім'я: ${c?.character?.name}` : `Ім'я: невідомо`,
         role: c?.role ? `Роль: ${c?.role}` : `Роль: невідомо`,

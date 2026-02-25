@@ -262,7 +262,7 @@ iframe {
 
 
 .fa-solid {
-  font-size: 5vh;
+  font-size: clamp(30px, 5vh, 60px);
 }
 .fa-solid-1 {
   font-size: 90%;
@@ -315,25 +315,10 @@ iframe {
     grid-template-columns: repeat(5, 1fr) !important;
   }
   
-  .panel-1 {
-    height: 20vh !important;
-  }
-  
-  .input-search {
-    top: 20% !important;
-  }
-  
   .panel-2 {
     display: none !important;
   }
   
-  .weblite-1 {
-    height: 80% !important;
-  }
-  
-  .fa-solid {
-    font-size: 10vh;
-  }
   .fa-solid-1 {
     font-size: 90%;
   }
@@ -351,21 +336,6 @@ iframe {
     padding: 0 0.375vw 0 0.375vw !important;
   }
   
-  .button-2 {
-    height: 13vh !important;
-  }
-  
-  .button-3 {
-    height: 13vh !important;
-    width: 30% !important;
-    margin: 5vmin !important;
-  }
-  
-  .button-4 {
-    height: 8vh !important;
-    font-size: 5vh !important;
-  }
-  
   .anime-1 {
     margin: 1vmax !important;
     width: 18vmax !important;
@@ -379,3 +349,4 @@ iframe {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
+/*362 рядки кода*/

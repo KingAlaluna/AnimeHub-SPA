@@ -63,14 +63,14 @@ function Button4(props) {
         ...button3,
         ...title2,
         backgroundImage: props.aniFavourite ? 'var(--gradient-15), var(--gradient-13)' : 'var(--gradient-14), var(--gradient-12)',
-        fontSize: '3vh',
-        height: '5vh',
+        fontSize: 'clamp(20px, 3vh, 30px)',
+        height: 'clamp(30px, 5vh, 40px)',
         width: props.width || '90%',
       },
       onClick: () => {
         props.onClick?.() || null;
       },
-      className: `button-4 fa-solid fa-heart`,
+      className: `fa-solid fa-heart`,
     },
     
   );
@@ -89,8 +89,8 @@ function Button5(props) {
         position: 'fixed',
         top: props.top || '50%',
         left: props.left || '2.5%',
-        width: '15vmin',
-        height: '15vmin',
+        width: 'clamp(50px, 7vh, 80px)',
+        height: 'clamp(50px, 7vh, 80px)',
         zIndex: '99',
         background: props.bg || 'var(--gradient-7)',
       },
@@ -125,7 +125,6 @@ function Button6(props) {
         props.isAc ? (g[`is${props.isAc}`] !== props.text && g[`is${props.isAc}2`] == true ? g[`setIs${props.isAc}2`](true) : g[`setIs${props.isAc}2`](!g[`is${props.isAc}2`])) : null;
         props.onClick?.() || null;
       },
-      className: 'button-2',
     },
     props.text,
   );
@@ -565,7 +564,7 @@ function Panel3(props) {
       
       return e(AnimeContainer1, { 
         key: `${anime.mal_id}-${index}`,
-        img: anime.images.jpg.image_url,
+        img: anime.images.webp.image_url,
         
         year: anime.year,
         score: anime.score,
@@ -679,7 +678,7 @@ function PanelRecomeng2(props) {
       
       return e(AnimeContainer2, { 
         key: anime.mal_id,
-        img: anime.images.jpg.image_url,
+        img: anime.images.webp.image_url,
         
         year: anime.year,
         score: anime.score,
@@ -730,13 +729,12 @@ function Pagination1() {
     'div',
     {
       style: {
-        height: '10vh',
+        height: 'clamp(60px, 10vh, 100px)',
         padding: '0 20vw 0 20vw',
         margin: '2vmin',
         flexDirection: 'row',
         justifyContent: 'space-between',
       },
-      className: 'panel-1',
     },
     e(Button7, {className: 'fa-arrow-left',
       onClick: () => {

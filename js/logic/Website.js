@@ -4,7 +4,8 @@ function Weblite() {
     'div',
     {
       style: {
-        height: '90%',
+        height: 'auto',
+        flex: '1',
         overflow: 'auto',
       },
       className: 'weblite-1',
