@@ -226,7 +226,7 @@ function Text4(props) {
         width: 'max-content',
         height: 'max-content',
         maxWidth: '95%',
-        wordBreak: 'break-all',
+        wordBreak: 'break-word',
         borderRadius: '10px',
         ...border6,
       },
@@ -241,7 +241,7 @@ function Text5(props) {
     {
       style: {
         margin: '1vmin 5%',
-        wordBreak: 'break-all',
+        wordBreak: 'break-word',
         display: 'block',
         height: 'max-content',
         width: '90%',
@@ -284,7 +284,7 @@ function Text7(props) {
       style: {
         margin: '1vmin 5%',
         padding: '1vmin',
-        wordBreak: 'break-all',
+        wordBreak: 'break-word',
         display: 'block',
         height: 'max-content',
         width: '90%',
@@ -309,7 +309,7 @@ function Url1(props) {
         width: 'max-content',
         height: 'max-content',
         maxWidth: '95%',
-        wordBreak: 'break-all',
+        wordBreak: 'break-word',
         borderRadius: '10px',
         ...border6,
         textDecoration: 'none',
@@ -333,7 +333,7 @@ function Url2(props) {
       style: {
         margin: '1vmin 5%',
         padding: '1vmin',
-        wordBreak: 'break-all',
+        wordBreak: 'break-word',
         display: 'block',
         height: 'max-content',
         width: '90%',
